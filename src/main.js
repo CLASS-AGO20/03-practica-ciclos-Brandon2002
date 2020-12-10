@@ -29,6 +29,16 @@ export default class App {
         }while(i <= numero);
         return divisible;
     }
+
+    elevar(numero, potencia){
+        let i = 1;
+        let ad = 1;
+        do{
+            ad = ad * numero;
+            i++;
+        }while( i <= potencia);
+        return ad;
+    }
     
 }
 
@@ -36,4 +46,5 @@ let app = new App();
 console.log(app.factorial(10));
 console.log(app.convertirAString(5));
 console.log(app.obtenerDivisibles(6));
+console.log(app.elevar(5, 6));
 
