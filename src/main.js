@@ -6,7 +6,20 @@ export default class App {
         }
         return suma;
     }
+    convertirAString(numero){
+        let i = 1;
+        let suma = "";
+        while(i <= numero){
+            suma = suma + "*";
+
+            i++;
+        }
+        return suma;
+    }
+    
 }
 
 let app = new App();
 console.log(app.factorial(10));
+console.log(app.convertirAString(5));
+
