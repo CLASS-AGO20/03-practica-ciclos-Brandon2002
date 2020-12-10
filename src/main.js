@@ -16,10 +16,24 @@ export default class App {
         }
         return suma;
     }
+    obtenerDivisibles(numero){
+        let i = 1;
+        let divisible = 0;
+        do{
+            if( numero % i == 0){
+                divisible = divisible + 1;
+            }else{
+
+            }
+            i++;
+        }while(i <= numero);
+        return divisible;
+    }
     
 }
 
 let app = new App();
 console.log(app.factorial(10));
 console.log(app.convertirAString(5));
+console.log(app.obtenerDivisibles(6));
 
